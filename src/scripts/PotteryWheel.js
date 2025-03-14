@@ -8,8 +8,7 @@ export const makePottery = (shape, weight, height) => {
         shape: shape,
         weight: weight,
         height: height,
-        id: currentId
+        id: currentId++
     }
-    currentId++
     return pottery;
 }
