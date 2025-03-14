@@ -120,12 +120,19 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > first we create all of the pottery for the array.  We then fire that pottery.  Then we decided if that pottery is cracked or not, if it's not cracked and has been fired then we go and set a price for it. so when we iterate over our HTML code in the potteryList function, we easily access the structured clone of the usePottery() to get the objects data from our array of items that can be sold and can easily access them and put them inside of our HTML with our string literals and ${pottery.price}
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/178ec29733864d98ad49bc1fe9396972?sid=891b72ab-29a8-4d78-a61f-1fae87d5d2f1
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > because that module is only for creating Pottery.  This makes the document more organized and is known as separation of concerns.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > all we would have to do is change the toSellOrNotToSell function in PotteryCatalog.js, for my line that says, 
+   if (potteryObject.cracked === true){ 
+      return
+   }
+   I could change it to:
+   if (potteryObject.cracked === true) {
+   potteryObject.price = 2.5
+   }
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/8cc74a81b5164060812f371a3f461c1b?sid=9fafc12a-7fc9-4f68-bd6a-e112af86b166)
