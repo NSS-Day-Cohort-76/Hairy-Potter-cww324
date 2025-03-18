@@ -5,7 +5,7 @@ const marketablePottery = [];
 export const toSellOrNotToSell = (potteryObject) => {
 
 if (potteryObject.cracked === true){
-    return
+    return potteryObject;
 } else {
     if (potteryObject.weight >= 6){
         potteryObject.price = 40;      

@@ -1,7 +1,7 @@
 import { makePottery } from "./PotteryWheel.js";
 import { firePottery } from "./Kiln.js";
 import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
-import { potteryList } from "./PotteryList.js";
+import { PotteryList } from "./PotteryList.js";
 
 
 
